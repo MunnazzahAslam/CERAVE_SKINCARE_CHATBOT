@@ -648,6 +648,7 @@
             "patterns": [
                 "UNDER 25",
                 "25-34",
+                "23",
                 "35-44",
                 "45+",
                 "not comfortable in sharing my age"
@@ -713,6 +714,8 @@
             "tag": "combination_skin",
             "patterns": [
                 "share skincare tips",
+                "skincare tip",
+                "tell skincare tip",
                 "please send some tips for good skin",
                 "can you share some skincare tips for glass skin?"
             ],
