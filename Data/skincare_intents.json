@@ -1,0 +1,737 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey",
+                "Hi",
+                "Hola",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hello, thanks for asking",
+                "Good to see you again",
+                "Hi there, how can I help?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Nice chatting to you, bye",
+                "Till next time"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure",
+                "You're welcome"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "How you could help me?",
+                "What help you provide?",
+                "How you can be helpful?"
+            ],
+            "responses": [
+                "- I'm your skincare guide about Cerave Products.\r\n- I can recommend you skincare routine based on your skin type\r\n- I can give you information regrading Cerave Products\r\n- I can guide you about products based on ingredients\r\n- I can also give you skincare tips 💆🏻 · 🧴 · ✨ "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "products-for-eyecreams",
+            "patterns": [
+                "Can you share eyecream products available?",
+                "eye creams",
+                "eye products",
+                "recommend cerave eye creams"
+            ],
+            "responses": [
+                "-Skin Renewing Eye Cream\r\n-Eye Repair Cream"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "products-for-facial-cleansers",
+            "patterns": [ 
+                "Can you share Facial Cleansers products available?",
+                "cleanser available",
+                "recommend good cerave face washes"
+            ],
+            "responses": [
+                "-Makeup Removing Cleanser Balm\r\n-Comforting Eye Makeup Remover\r\n-Hydrating Toner\r\n-Hydrating Makeup Removing Plant-Based Wipes\r\n-Makeup Removing Cleanser Cloths\r\n-Hydrating Facial Cleanser\r\n-Acne Control Cleanser\r\n-Acne Foaming Cream Cleanser\r\n-Renewing SA Cleanser\r\n-Hydrating Cream-to-Foam Cleanser\r\n-Foaming Facial Cleanser\r\n-Hydrating Micellar Water"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "products-for-facial-moisturizers",
+            "patterns": [
+                "Can you share Facial Moisturizers products available?",
+                "creams for dry skin",
+                "recommend good mositurizers"
+            ],
+            "responses": [
+                "-AM Facial Moisturizing Lotion with Sunscreen\r\n-PM Facial Moisturizing Lotion\r\n-Moisturizing Cream\r\n-Daily Moisturizing Lotion\r\n-Skin Renewing Eye Cream\r\n-Skin Renewing Night Cream\r\n-Eye Repair Cream\r\n-Hydrating Hyaluronic Acid Serum\r\n-Ultra-Light Moisturizing Lotion SPF 30\r\n-Skin Renewing Day Cream\r\n-Skin Renewing Gel Oil"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "products-for-body-cleansers",
+            "patterns": [
+                "Can you share Body Cleansers products available?",
+                "recommend body cleansers",
+                "any body products available?"
+            ],
+            "responses": [
+                "-Moisturizing Cream\r\n-Daily Moisturizing Lotion\r\n-Healing Ointment\r\n-Itch Relief Moisturizing Cream\r\n-Itch Relief Moisturizing Lotion\r\n-SA Cream for Rough & Bumpy Skin\r\n-SA Lotion for Rough & Bumpy Skin\\Eczema Relief Creamy Oil\r\n-Psoriasis Moisturizing Cream\r\n-Diabetics Dry Skin Relief Moisturizing Cream\r\n-Therapeutic Hand Cream\r\n-Baby Moisturizing Lotion"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "products-for-body-moisturizers",
+            "patterns": [
+                "Can you share Body Moisturizers products available?",
+                "recommend body moisturizers",
+                "any body products available?"
+            ],
+            "responses": [
+                "-Resurfacing Retinol Serum\r\n-Skin Renewing Vitamin C Serum\r\n-Skin Renewing Nightly Exfoliating Treatment\r\n-Hydrating hyaluronic acid serum\r\n-Skin Renewing Retinol Serum\r\n-Renewing Gel Oil Front\r\n-Skin Renewing Gel Oil\r\n-Acne Control Gel\r\n-Hydrating full-face acne treatment gel\r\n-CeraVe Control Gel 700x875"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "products-for-facial-serums",
+            "patterns": [
+                "Can you share Facial Serums products available?",
+                "share serums",
+                "share some good cerave facial serums"
+            ],
+            "responses": [
+                "-Makeup Removing Cleanser Balm\r\n-Comforting Eye Makeup Remover\r\n-Hydrating Toner\r\n-Hydrating Makeup Removing Plant-Based Wipes"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "products-for-makeup-removers",
+            "patterns": [
+                "Can you share Makeup Removers products available?",
+                "share makeup removers",
+                "share some good cerave makeup removers",
+                "share some good cerave cleansing balms"
+            ],
+            "responses": [
+                "-Makeup Removing Cleanser Balm\r\n-Comforting Eye Makeup Remover\r\n-Hydrating Toner\r\n-Hydrating Makeup Removing Plant-Based Wipes"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "products-for-sunscreens",
+            "patterns": [
+                "Can you share Sunscreens products available?",
+                "sunscreens",
+                "sunblocks"
+            ],
+            "responses": [
+                "-Hydrating Sheer Sunscreen Broad Spectrum SPF 30 for Face & Body\r\n-AM Facial Moisturizing Lotion with Sunscreen\r\n-Ultra-Light Moisturizing Lotion SPF 30\r\n-Hydrating Mineral Sunscreen SPF 30 Body Lotion\r\n-Hydrating Mineral Sunscreen SPF 50 Body Lotion\r\n-Hydrating Mineral Sunscreen SPF 30 Face Lotion\r\n-Hydrating Mineral Sunscreen SPF 50 Face Lotion\r\n-SPF 30 Tinted Hydrating Mineral Sunscreen for Face"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "products-for-baby",
+            "patterns": [
+                "Can you share products available for baby?",
+                "baby products",
+                "any baby products?"
+            ],
+            "responses": [
+                "-Baby Wash & Shampoo\r\n-Baby Moisturizing Lotion\r\n-Baby Healing Ointment\r\n-Baby Moisturizing Cream\r\n-Baby 45 SPF Tube Front\r\n-Baby Sunscreen Lotion"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "products-for-ointment",
+            "patterns": [
+                "Can you share Ointment products available?",
+                "ointments available?"
+            ],
+            "responses": [
+                "-Healing Ointment\r\n-Baby Healing Ointment"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "concern-acne",
+            "patterns": [
+                "My main concern is acne",
+                "acne related products"
+            ],
+            "responses": [
+                "-Acne Foaming Cream Cleanser\r\n-Acne Control Cleanser\r\n-Acne Control Gel\r\n-Resurfacing Retinol Serum\r\n-AM Facial Moisturizing Lotion with Sunscreen\r\n-PM Facial Moisturizing Lotion"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "concern-aging",
+            "patterns": [
+                "My main concern is aging",
+                "aging products"
+            ],
+            "responses": [
+                "-Skin Renewing Eye Cream\r\n-Skin Renewing Night Cream\r\n-Skin Renewing Nightly Exfoliating Treatment\r\n-Skin Renewing Vitamin C Serum\r\n-Skin Renewing Retinol Serum\r\n-Skin Renewing Day Cream\r\n-Skin Renewing Gel Oil"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "concern-cracked-chafed-skin",
+            "patterns": [
+                "My main concern is Cracked, Chafed Skin",
+                "cracked skin products"
+            ],
+            "responses": [
+                "-Healing Ointment\r\n-Therapeutic Hand Cream\r\n-Baby Healing Ointment"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "concern-diabetic-skin",
+            "patterns": [
+                "My main concern is Diabetic Skin",
+                "diabetes"
+            ],
+            "responses": [
+                "-Diabetics Dry Skin Relief Moisturizing Cream\r\n-Diabetics' Dry Skin Relief Cleansing Wash\r\n-Diabetics Dry Skin Relief Hand and Foot Cream\r\n-Moisturizing Cream\r\n-Hydrating Facial Cleanser"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "concern-eczema",
+            "patterns": [
+                "My main concern is Eczema",
+                "eczema"
+            ],
+            "responses": [
+                "-Eczema Relief Creamy Oil\r\n-Hydrocortisone Anti-Itch Cream"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "concern-itchy-skin",
+            "patterns": [
+                "My main concern is Itchy Skin",
+                "itchy skin",
+                "irritated skin",
+                "sensitive skin"
+            ],
+            "responses": [
+                "-Itch Relief Moisturizing Cream\r\n-Pramoxine hydrochloride itch relief cream\r\n-Itch Relief Moisturizing Lotion\r\n-Hydrocortisone Anti-Itch Cream"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "concern-psoriasis",
+            "patterns": [
+                "My main concern is Psoriasis",
+                "Psoriasis"
+            ],
+            "responses": [
+                "-Psoriasis Moisturizing Cream\r\n-Psoriasis Cleanser"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "concern-rough-and-bumpy",
+            "patterns": [
+                "My main concern is Rough and Bumpy skin",
+                "rough skin",
+                "bumpy skin",
+                "dehydrated skin"
+            ],
+            "responses": [
+                "-Renewing SA Cleanser\r\n-SA Cream for Rough & Bumpy Skin\r\n-SA Lotion for Rough & Bumpy Skin\r\n-SA Cleanser Bar for Rough & Bumpy Skin\r\n-SA Body Wash for Rough & Bumpy Skin"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "skin_combo",
+            "patterns": [
+                "Suggest products for combination skin",
+                "cerave products for combo skin"
+            ],
+            "responses": [
+                "-Comforting Eye Makeup Remover\r\n-Makeup Removing Cleanser Balm\r\n-Hydrating Toner\r\n-Moisturizing Cream\r\n-Daily Moisturizing Lotion\r\n-Hydrating Facial Cleanser\r\n-AM Facial Moisturizing Lotion with Sunscreen\r\n-Foaming Facial Cleanser\r\n-Hydrating Cream-to-Foam Cleanser\r\n-PM Facial Moisturizing Lotion\r\n-Renewing SA Cleanser\r\n-Moisturizing Cream\r\n-Daily Moisturizing Lotion\r\n-Hydrating Facial Cleanser\r\n-AM Facial Moisturizing Lotion with Sunscreen"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "skin_dry",
+            "patterns": [
+                "Suggest products for dry skin",
+                "cerave products for dry skin"
+            ],
+            "responses": [
+                "-Comforting Eye Makeup Remover\r\n-Makeup Removing Cleanser Balm\r\n-Skin Renewing Eye Cream\r\n-Hydrating Makeup Removing Plant-Based Wipes\r\n-Makeup Removing Cleanser Cloths\r\n-Moisturizing Cream\r\n-Daily Moisturizing Lotion\r\n-Hydrating Facial Cleanser\r\n-AM Facial Moisturizing Lotion with Sunscreen\r\n-Hydrating Cream-to-Foam Cleanser\r\n-Eye Repair Cream\r\n-Hydrating Hyaluronic acid serum\r\n-Makeup Removing Cleanser Cloths\r\n-Moisturizing Cream\r\n-Daily Moisturizing Lotion\r\n-Hydrating Facial Cleanser\r\n-AM Facial Moisturizing Lotion with Sunscreen\r\n-Hydrating Cream-to-Foam Cleanser\r\n-Eye Repair Cream\r\n-Hydrating Hyaluronic Acid Serum"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "skin_normal",
+            "patterns": [
+                "Suggest products for normal skin",
+                "cerave products for norma; skin"
+            ],
+            "responses": [
+                "-Comforting Eye Makeup Remover\r\n-Hydrating Toner\r\n-Hydrating Makeup Removing Plant-Based Wipes\r\n-Moisturizing Cream\r\n-Daily Moisturizing Lotion\r\n-Hydrating Facial Cleanser\r\n-AM Facial Moisturizing Lotion with Sunscreen\r\n-Foaming Facial Cleanser\r\n-Hydrating Cream-to-Foam Cleanser\r\n-PM Facial Moisturizing\r\n-Skin Renewing Nightly Exfoliating Treatment\r\n-Skin Renewing Eye Cream\r\n-Eye Repair Cream\r\n-Makeup Removing Cleanser Balm\r\n-Hydrating Hyaluronic Acid Serum\r\n-Ultra-Light Moisturizing Lotion SPF 30"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "skin_oily",
+            "patterns": [
+                "Suggest products for oily skin",
+                "cerave products for oily skin"
+            ],
+            "responses": [
+                "-Foaming Facial Cleanser\r\n-Hydrating Toner\r\n-Ultra-Light Moisturizing Lotion SPF 30\r\n-Makeup Removing Cleanser Balm\r\n-Comforting Eye Makeup Remover\r\n-AM Facial Moisturizing Lotion with Sunscreen\r\n-PM Facial Moisturizing Lotion\r\n-Renewing SA Cleanser\r\n-Foaming Cleanser Bar"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "skin_sensitive",
+            "patterns": [
+                "Suggest products for sensitive skin",
+                "cerave products for sensitive skin",
+                "cerave products for irritated skin"
+            ],
+            "responses": [
+                "-Makeup Removing Cleanser Balm\r\n-Comforting Eye Makeup Remover\r\n-Hydrating Toner\r\n-Hydrating Makeup Removing Plant-Based Wipes\r\n-Hydrating Cream-to-Foam Cleanser\r\n-Resurfacing Retinol Serum\r\n-Skin Renewing Nightly Exfoliating Treatment\r\n-Skin Renewing Vitamin C Serum\r\n-Hydrating Hyaluronic Acid Serum\r\n-Hydrating Mineral Sunscreen SPF 30 Face Sheer Tint\r\n-SPF 30 Tinted Hydrating Mineral Sunscreen for Face\r\n-Hydrating Mineral Sunscreen SPF 50 Face Lotion\r\n-Hydrating Mineral Sunscreen SPF 50 Body Lotion\r\n-Hydrating Cream-to-Foam Cleanser\r\n-Resurfacing Retinol Serum\r\n-Skin Renewing Nightly Exfoliating Treatment\r\n-Skin Renewing Vitamin C Serum\r\n-Hydrating Hyaluronic Acid Serum\r\n-SPF 30 Tinted Hydrating Mineral Sunscreen for Face\r\n-Hydrating Mineral Sunscreen SPF 50 Face Lotion\r\n-SPF 50 Hydrating Mineral Sunscreen for Body"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "ingredient_benzoyl_peroxide",
+            "patterns": [
+                "Suggest products with benzoyl peroxide"
+            ],
+            "responses": [
+                "-Acne Foaming Cream Cleanser - BENZOYL PEROXIDE ACNE TREATMENT - 4% BENZOYL PEROXIDE"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "ingredient_dimethicone",
+            "patterns": [
+                "Suggest products with dimethicone"
+            ],
+            "responses": [
+                "-Moisturizing Cream\r\n-Skin Renewing Night Cream\r\n-Skin Renewing Nightly Exfoliating Treatment\r\n-SA Cream for Rough & Bumpy Skin\r\n-SA Lotion for Rough & Bumpy Skin\r\n-Itch Relief Moisturizing Cream\r\n-Therapeutic Hand Cream\r\n-Baby Moisturizing Lotion\r\n-Baby Moisturizing Cream"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "ingredient_hyaluronic_acid",
+            "patterns": [
+                "Suggest products with hyaluronic acid"
+            ],
+            "responses": ["-Comforting Eye Makeup Remover\r\n-Hydrating Sheer Sunscreen Broad Spectrum SPF 30 for Face & Body\r\n-Hybrid Blend of Sun Filters Absorbs and Reflects the Sun’s Damaging Rays\r\n-Daily Moisturizing Lotion"],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "ingredient_lactic_acid",
+            "patterns": [
+                "Suggest products with lactic acid"
+            ],
+            "responses": ["-Skin Renewing Nightly Exfoliating Treatment\r\n-SA Cream for Rough & Bumpy Skin\r\n-SA Lotion for Rough & Bumpy Skin\r\n-Acne Control Gel"],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "ingredient_niacinamide",
+            "patterns": [
+                "Suggest products with niacinamide"
+            ],
+            "responses": ["-Comforting Eye Makeup Remover\r\n-Acne Control Cleanser\r\n-AM Facial Moisturizing Lotion with Sunscreen\r\n-Foaming Facial Cleanser"],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "ingredient_petrolatum",
+            "patterns": [
+                "Suggest products with petrolatum"
+            ],
+            "responses": ["-Moisturizing Cream\r\n-Healing Ointment\r\n-Hydrating Cleanser Bar\r\n-Baby Healing Ointment"],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "ingredient_pramoxine_hydrochloride",
+            "patterns": [
+                "Suggest products with pramoxine hydrochloride"
+            ],
+            "responses": [],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "ingredient_retinol",
+            "patterns": [
+                "Suggest products with retinol"
+            ],
+            "responses": ["-Resurfacing Retinol Serum\r\n-Skin Renewing Retinol Serum\r\n-Skin Renewing Day Cream\r\n-Anti-aging moisturizer with retinol & SPF"],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "ingredient_salicylic_acid",
+            "patterns": [
+                "Suggest products with salicylic acid"
+            ],
+            "responses": ["-Acne Control Gel\r\n-Renewing SA Cleanser\r\n-SA Cream for Rough & Bumpy Skin\r\n-SA Lotion for Rough & Bumpy Skin"],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "ingredient_titanium_dioxide",
+            "patterns": [
+                "Suggest products with titanium dioxide"
+            ],
+            "responses": [],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "ingredient_urea",
+            "patterns": [
+                "Suggest products with urea"
+            ],
+            "responses": [],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "ingredient_vitamin_C",
+            "patterns": [
+                "Suggest products with vitamin C"
+            ],
+            "responses": ["Skin Renewing Vitamin C Serum"],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "ingredient_zinc_oxide",
+            "patterns": [
+                "Suggest products with zinc oxide"
+            ],
+            "responses": ["-Hydrating Sheer Sunscreen Broad Spectrum SPF 30 for Face & Body\r\n-AM Facial Moisturizing Lotion with Sunscreen\r\n-Hydrating Mineral Sunscreen SPF 30 Face Sheer Tint\r\n-SPF 30 Tinted Hydrating Mineral Sunscreen for Face\r\n-SPF 50 Hydrating Mineral Sunscreen for Face"],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "best_seller_products",
+            "patterns": [
+                "What are your best sellers?"
+            ],
+            "responses": ["-Moisturizing Cream\r\n-Daily Moisturizing Lotion\r\n-Cerave Daily Hydrating Cleanser\r\n-Hydrating Facial Cleanser\r\n-AM Facial Moisturizing Lotion with Sunscreen\r\n-Foaming Facial Cleanser\r\n-PM Facial Moisturizing Lotion"],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "best_new_products",
+            "patterns": [
+                "Suggest some new products"
+            ],
+            "responses": ["-Hydrating Sheer Sunscreen Broad Spectrum SPF 30 for Face & Body\r\n-Skin Renewing Eye Cream\r\n-Comforting Eye Makeup Remover\r\n-Makeup Removing Cleanser Balm\r\n-Hydrating Toner\r\n-Hydrating Makeup Removing Plant-Based Wipes\r\n-SA Cleanser Bar for Rough & Bumpy Skin\r\n-Acne Control Gel"],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "order_tracking",
+            "patterns": [
+                "where is order with id 562B78?",
+                "track order 562B78",
+                "Where is my order with id 562B78?"
+            ],
+            "responses": [
+                "You can track your order here"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "skincare_routine",
+            "patterns": [
+                "I need to build my skincare routine",
+                "I want to follow a new skincare routine",
+                "Guide me about my skincare routine"
+            ],
+            "responses": [
+                "Sure, what are your current skin goals? \r\n-REDUCE OIL PRODUCTION \r\n-SOOTHE DRY SKIN \r\n-REDUCE ACNE \r\n-SHRINK PORES"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "price_range",
+            "patterns": [
+                "REDUCE OIL PRODUCTION",
+                "SOOTHE DRY SKIN",
+                "REDUCE ACNE",
+                "SHRINK PORES"
+            ],
+            "responses": [
+                "Got it and What's your typical product price range? \r\n-BUDGET \r\n-MODERATE \r\n-PREMIUM \r\n-VARIES"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "budget",
+            "patterns": [
+                "BUDGET",
+                "MODERATE",
+                "PREMIUM",
+                "VARIES"
+            ],
+            "responses": [
+                "Alright. So, how thorough would you like your skincare routine to be? \r\n- 3 STEP ROUTINE \r\n- 4 STEP ROUTINE \r\n- 5 STEP ROUTINE"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "steps_in_skincare",
+            "patterns": [
+                "3-STEP ROUTINE",
+                "4-STEP ROUTINE",
+                "5-STEP ROUTINE"
+            ],
+            "responses": [
+                "Hmm and do you have any skin allergies from any of the following? \r\n-NUTS \r\n-GLUTEN \r\n-ACIDS \r\n-FRAGRANCE \r\n-I DON'T HAVE ANY ALLERGIES"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "skincare_allergies",
+            "patterns": [
+                "NUTS",
+                "GLUTEN",
+                "ACIDS",
+                "FRAGRANCE",
+                "I DON'T HAVE ANY ALLERGIES",
+                "none",
+                "no allergies"
+            ],
+            "responses": [
+                "Right and what's your age?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "UNDER 25",
+                "25-34",
+                "35-44",
+                "45+",
+                "not comfortable in sharing my age"
+            ],
+            "responses": [
+                "Right and what best describes your skin? \r\n-OILY \r\n-DRY, \r\n-IRRITATED, \r\n-COMBINATION"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "oily_skin",
+            "patterns": [
+                "products good for oily skin",
+                "routine for oily skin",
+                "I've oily skin",
+                "OILY",
+                "I've shiny skin"
+            ],
+            "responses": [
+                "Morning routine: \r\n1)Cleanse - Foaming gel cleanser for normal to oily skin \r\n2)Treat - Moisturizing eye cream for dark circles and puffiness \r\n3)Moisturize and protect - Lightweight oil-free moisturizer with SPF"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "dry_skin",
+            "patterns": [
+                "products good for dry skin",
+                "routine for dry skin",
+                "I've dry skin",
+                "DRY",
+                "I've extremely flaky skin"
+            ],
+            "responses": [
+                "Morning routine: \r\n1)Cleanse - Hydrating cleanser for normal-to-dry skin \r\n2)Treat - Moisturizing eye cream for dark circles and puffiness \r\n3)Moisturize and protect - AM Facial Moisturizing Lotion with Sunscreen"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "combination_skin",
+            "patterns": [
+                "products good for combination skin",
+                "routine for combination skin",
+                "guidance about combination skin",
+                "I've combination skin",
+                "COMBINATION",
+                "COMBO",
+                "I'm oily at t-zone and dry on the other parts"
+            ],
+            "responses": [
+                "Morning routine: \r\n1)Cleanse - Salicylic acid foaming gel cleanser for smooth skin \r\n2)Treat - Moisturizing eye cream for dark circles and puffiness \r\n3)Moisturize and protect - Lightweight oil-free moisturizer with SPF"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "combination_skin",
+            "patterns": [
+                "share skincare tips",
+                "please send some tips for good skin",
+                "can you share some skincare tips for glass skin?"
+            ],
+            "responses": [
+                "Stay Hydrated 💆🏻 ",
+                "Eat a Healthy Diet 🧖",
+                "Stay out of the Sun 🌞",
+                "Moisturize. Moisturize. Moisturize.🧴 · ✨",
+                "Get beauty sleep atleast 8 hours💆 · 🌸",
+                "Do not Tug on Your Skin🧖🏻 · 🧼",
+                "Do not Forget Your Neck & Hands🧴 · ✨",
+                "Keep Stress in Check💆 · 🌸",
+                "Be Gentle🧴 · ✨",
+                "Do not Forget Your Lips🧖🏻 · 🧼",
+                "Stay Away from Hot Water💆 · 🌸"
+            ],
+            "context": [
+                ""
+            ]
+        }
+    ]
+}
